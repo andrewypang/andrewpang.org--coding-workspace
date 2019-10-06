@@ -8,6 +8,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/06a3e9347a.js"></script>
     <title>Vault | Andrew Pang</title>
 </head>
 
@@ -23,17 +24,59 @@
         <!-- Index -->
         <section class="container section-index">
             <div class="row">
-                <div class="col s6">
-                    <div class="collection">
-                        <a href="http://art.andrewpang.org" class="collection-item">Art</a>
-                        <a href="http://astrophotography.andrewpang.org" class="collection-item">Astrophotography</a>
+
+                <!-- Card for Art Website -->
+                <div class="col s12 m6">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="img/mountains.svg" alt="card picture">
+                            <span class="card-title">Art</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Paintings</p>
+                        </div>
+                        <div class="card-action"><a href="http://art.andrewpang.org" class="">Go</a></div>
                     </div>
                 </div>
+
+                <!-- Card for Astro Website -->
+                <div class="col s12 m6">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="https://astrophotography.andrewpang.org/photos/solar-system/moon/highlights/close-ups/Moon_200308_g3_ap301.jpg"
+                                alt="card picture">
+                            <span class="card-title">Astrophotography</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Photos of space taken by me</p>
+                        </div>
+                        <div class="card-action"><a href="http://astrophotography.andrewpang.org" class="">Go</a></div>
+                    </div>
+                </div>
+
+
             </div>
         </section>
         <!-- Footer -->
         <footer class="footer">
-            <img src="img/mountains.svg" alt="" class="footer__image">
+            <div class="footer__content">
+                <!-- Footer Logo -->
+                <span class="fas fa-moon footer__logo"></span>
+                <!-- Navigation for links -->
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mailto:andrew.y.pang@gmail.com" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer__copyright">
+                    Built by <a href="#!" class="footer__link">Andrew Pang</a>
+                </p>
+
+            </div>
+
 
         </footer>
 
