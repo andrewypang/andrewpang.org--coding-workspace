@@ -1,0 +1,11 @@
+.footer {
+    position: relative;
+    background-color: blue;
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+}

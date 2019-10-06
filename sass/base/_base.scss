@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is.
+    // 10/16 = .625
+    font-size: 62.5%;
+
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    // Sunset Color for the Background
+    background-image: linear-gradient(0deg, rgba(#b92b27,1) 15%, rgba(#1565C0,1) 100%);
+}

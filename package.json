@@ -1,0 +1,21 @@
+{
+  "name": "andrewpang.org--vault",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w sass/main.scss dist/css/main.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewypang/andrewpang.org--vault.git"
+  },
+  "author": "Andrew Pang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewypang/andrewpang.org--vault/issues"
+  },
+  "homepage": "https://github.com/andrewypang/andrewpang.org--vault#readme"
+}
