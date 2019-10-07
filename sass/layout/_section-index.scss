@@ -26,7 +26,8 @@
 
     .card-image {
         width: 100%;
-        height: 15rem;
+        // height changes the height of the card image
+        height: 20rem;
 
         &--art {
             background-image: linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, .2)),
