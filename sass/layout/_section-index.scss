@@ -28,11 +28,29 @@
         width: 100%;
         height: 25rem;
 
-        &__UCSC-TrailMapping{
+        &--art {
+            background-image: linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, .2)),
+                url(../img/mountains.svg);
+            background-size: cover;
+            background-position: 50% 40%;
+        }
+
+        &--astrophotography {
+            background-image: url(https://astrophotography.andrewpang.org/photos/solar-system/moon/highlights/close-ups/Moon_200308_g3_ap301.jpg);
+            background-size: cover;
+        }
+
+        &--UCSC-TrailMapping {
             background-image: linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, .2)),
                 url(http://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
             background-size: 150% auto;
             background-position: 50% 40%;
+        }
+
+        &--CMPS142 {
+            background-image: url(../img/cmps142-CardPicture.jpg);
+            background-size: cover;
+            background-position: 0% 50%;
         }
     }
 
