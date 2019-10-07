@@ -14,10 +14,20 @@ html {
 }
 
 body {
+    // For sticky footer
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+
     box-sizing: border-box;
     scroll-behavior: smooth;
 
     // Sunset Color for the Background
     // background-image: linear-gradient(0deg, rgba(#b92b27,1) 15%, rgba(#1565C0,1) 100%);
     background-color: #ffffff;
+}
+
+main {
+    flex: 1 0 auto;
 }
