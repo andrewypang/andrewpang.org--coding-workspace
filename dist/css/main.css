@@ -144,6 +144,11 @@ body {
   background-position: 0% 50%;
 }
 
+.card .card-image--web-resource {
+  background-image: url(../img/los-angleles-palm-trees.jpg);
+  background-size: cover;
+}
+
 .card .card-content .card-description {
   margin: 1rem 0 0 0;
 }
