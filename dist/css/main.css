@@ -132,8 +132,8 @@ body {
 }
 
 .card .card-image--UCSC-TrailMapping {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(http://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(http://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(https://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(https://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
   background-size: 150% auto;
   background-position: 50% 40%;
 }
@@ -144,9 +144,15 @@ body {
   background-position: 0% 50%;
 }
 
-.card .card-image--web-resource {
-  background-image: url(../img/los-angleles-palm-trees.jpg);
+.card .card-image--web-resources {
+  background-image: url(../img/web-resources-photo.jpg);
   background-size: cover;
+}
+
+.card .card-image--programming-resources {
+  background-image: url(../img/programming-resources-photo.jpg);
+  background-size: cover;
+  background-position: 0% 35%;
 }
 
 .card .card-content .card-description {
