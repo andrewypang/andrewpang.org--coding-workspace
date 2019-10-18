@@ -49,20 +49,25 @@
         }
 
         &--CMPS142 {
-            background-image: url(../img/cmps142-CardPicture.jpg);
+            background-image: url(../img/cmps142-ML-photo-min.jpg);
             background-size: cover;
             background-position: 0% 50%;
         }
 
         &--web-resources {
-            background-image: url(../img/web-resources-photo.jpg);
+            background-image: url(../img/web-resources-photo-min.jpg);
             background-size: cover;
         }
 
         &--programming-resources {
-            background-image: url(../img/programming-resources-photo.jpg);
+            background-image: url(../img/programming-resources-photo-min.jpg);
             background-size: cover;
             background-position: 0% 35%;
+        }
+
+        &--git {
+            background-image: url(../img/git-photo-min.jpg);
+            background-size: cover;
         }
     }
 

@@ -139,20 +139,25 @@ body {
 }
 
 .card .card-image--CMPS142 {
-  background-image: url(../img/cmps142-CardPicture.jpg);
+  background-image: url(../img/cmps142-ML-photo-min.jpg);
   background-size: cover;
   background-position: 0% 50%;
 }
 
 .card .card-image--web-resources {
-  background-image: url(../img/web-resources-photo.jpg);
+  background-image: url(../img/web-resources-photo-min.jpg);
   background-size: cover;
 }
 
 .card .card-image--programming-resources {
-  background-image: url(../img/programming-resources-photo.jpg);
+  background-image: url(../img/programming-resources-photo-min.jpg);
   background-size: cover;
   background-position: 0% 35%;
+}
+
+.card .card-image--git {
+  background-image: url(../img/git-photo-min.jpg);
+  background-size: cover;
 }
 
 .card .card-content .card-description {
