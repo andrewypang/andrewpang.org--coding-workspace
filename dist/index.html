@@ -6,159 +6,95 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <script src="https://kit.fontawesome.com/06a3e9347a.js"></script>
-    <title>The Vault | Andrew Pang</title>
+    <title>Coding Workspace | Andrew Pang</title>
 </head>
 
 <body>
     <!-- Main Header -->
-    <header class="container">
-        <h1>The Vault</h1>
-        <h5>A collection of random stuff I've done</h5>
-        <div class="divider"></div>
+    <header class="section--header">
+        <h1>Coding Workspace</h1>
+        <h2>A collection of random stuff I've done</h2>
+        <hr>
     </header>
-    <br>
 
     <!-- The Main Content of Web Page -->
     <main>
         <!-- Index -->
-        <section class="container section-index">
-            <div class="row">
-
-                <!-- Card for Web Resources -->
-                <div class="col s12 m6">
-                    <div class="card">
-                        <a href="https://www.projects.andrewpang.org/web-resources/index.html" class="" target="_blank">
-                            <div class="card-image card-image--web-resources"></div>
-                        </a>
-                        <div class="card-content">
-                            <span class="card-title">Web Resources</span>
-                            <div class="divider"></div>
-                            <p class="card-description">HTML, CSS, JS, & MORE</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for Programming Resources -->
-                <div class="col s12 m6">
-                    <div class="card">
-                        <a href="https://www.projects.andrewpang.org/programming-resources/index.html" class=""
-                            target="_blank">
-                            <div class="card-image card-image--programming-resources"></div>
-                        </a>
-                        <div class="card-content">
-                            <span class="card-title">Programming Resources</span>
-                            <div class="divider"></div>
-                            <p class="card-description">Python, Java, SQL, etc.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <!-- Card for Astro Website -->
-                <div class="col s12 m4">
-                    <div class="card">
-                        <a href="https://astrophotography.andrewpang.org" class="" target="_blank">
-                            <div class="card-image card-image--astrophotography"></div>
-                        </a>
-                        <div class="card-content">
-                            <span class="card-title">Astrophotography</span>
-                            <div class="divider"></div>
-                            <p class="card-description">Photos of space taken by me</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for UCSC Trail Mapping -->
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image card-image--UCSC-TrailMapping"></div>
-                        <div class="card-content">
-                            <span class="card-title">UCSC Trail Mapping</span>
-                            <div class="divider"></div>
-                            <p class="card-description">A map of the trails in University of California, Santa Cruz</p>
-                        </div>
-                        <div class="card-action" style="display: flex; justify-content: space-around;">
-                            <a href="http://projects.andrewpang.org/UCSC-TrailMapping/TrailMappingWinter2017MapTrails.pdf"
-                                target="_blank">Without Labels</a>
-                            <a href="http://projects.andrewpang.org/UCSC-TrailMapping/TrailMappingWinter2017MapTrails+Labels.pdf"
-                                target="_blank">With Label</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card for Art Website -->
-                <div class="col s12 m4">
-                    <div class="card">
-                        <a href="http://art.andrewpang.org" class="" target="_blank">
-                            <div class="card-image card-image--art"></div>
-                        </a>
-                        <div class="card-content">
-                            <span class="card-title">Art</span>
-                            <div class="divider"></div>
-                            <p class="card-description">Paintings</p>
-                        </div>
-                    </div>
+        <section class="section--main-content">
+            <!-- Card for Web Resources -->
+            <div class="card card--span-6">
+                <a href="https://www.andrewpang.org/coding-workspace/web-resources" class="" target="_blank">
+                    <div class="card-image card-image--web-resources"></div>
+                </a>
+                <div class="card-body">
+                    <h3 class="card-body__title">Web Resources</h3>
+                    <hr>
+                    <p class="card-body__description">HTML, CSS, JS, & MORE</p>
                 </div>
             </div>
-            <div class="row">
-                <!-- Card for Git Notes -->
-                <div class="col s12 m4">
-                        <div class="card">
-                            <a href="resources/git-page/git.html" class="" target="_blank">
-                                <div class="card-image card-image--git"></div>
-                            </a>
-                            <div class="card-content">
-                                <span class="card-title">Git Notes</span>
-                                <div class="divider"></div>
-                                <p class="card-description">Some useful git commands</p>
-                            </div>
-                        </div>
-                    </div>
-
-                <!-- Card for UCSC CMPS142 - Machine Learning Notes -->
-                <div class="col s12 m4">
-                    <div class="card">
-                        <a href="resources/CMPS142MachineLearningNotes/index.html" class="" target="_blank">
-                            <div class="card-image card-image--CMPS142"></div>
-                        </a>
-                        <div class="card-content">
-                            <span class="card-title">UCSC Machine Learning Notes</span>
-                            <div class="divider"></div>
-                            <p class="card-description">Some of my notes from UC Santa Cruz for CMPS142 Machine Learning
-                                class</p>
-                        </div>
-                    </div>
+            <!-- Card for Programming Resources -->
+            <div class="card card--span-6">
+                <a href="https://www.andrewpang.org/coding-workspace/programming-resources" class="" target="_blank">
+                    <div class="card-image card-image--programming-resources"></div>
+                </a>
+                <div class="card-body">
+                    <h3 class="card-body__title">Programming Resources</h3>
+                    <hr>
+                    <p class="card-body__description">Python, Java, SQL, etc.</p>
+                </div>
+            </div>
+            <!-- Card for UCSC Trail Mapping -->
+            <div class="card card--span-4">
+                <a href="https://www.andrewpang.org/projects/ucsc-trail-mapping/TrailMappingWinter2017MapTrailsAndLabels.pdf"
+                    class="" target="_blank">
+                    <div class="card-image card-image--UCSC-TrailMapping"></div>
+                </a>
+                <div class="card-body">
+                    <h3 class="card-body__title">UCSC Trail Mapping</h3>
+                    <hr>
+                    <p class="card-body__description">A map of the trails in University of California, Santa Cruz</p>
+                </div>
+                <!-- <div class="card-action" style="display: flex; justify-content: space-around;">
+                    <a href="http://projects.andrewpang.org/UCSC-TrailMapping/TrailMappingWinter2017MapTrails.pdf"
+                        target="_blank">Without Labels</a>
+                    <a href="http://projects.andrewpang.org/UCSC-TrailMapping/TrailMappingWinter2017MapTrails+Labels.pdf"
+                        target="_blank">With Label</a>
+                </div> -->
+            </div>
+            <!-- Card for Git Notes -->
+            <div class="card card--span-4">
+                <a href="notes/git-notes/" class="" target="_blank">
+                    <div class="card-image card-image--git"></div>
+                </a>
+                <div class="card-body">
+                    <h3 class="card-body__title">Git Notes</h3>
+                    <hr>
+                    <p class="card-body__description">Some useful git commands</p>
+                </div>
+            </div>
+            <!-- Card for UCSC CMPS142 - Machine Learning Notes -->
+            <div class="card card--span-4">
+                <a href="notes/ucsc-machine-learning-notes/" class="" target="_blank">
+                    <div class="card-image card-image--ucsc-machine-learning-notes"></div>
+                </a>
+                <div class="card-body">
+                    <h3 class="card-body__title">UCSC Machine Learning Notes</h3>
+                    <hr>
+                    <p class="card-body__description">Some of my notes from UC Santa Cruz for CMPS142 Machine Learning
+                        class</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <!-- Footer Logo -->
-            <span class="fas fa-moon footer__logo"></span>
-            <!-- Navigation for links -->
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="mailto:andrew.y.pang@gmail.com" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <p class="footer__copyright">
-                Built by <a href="#!" class="footer__link">Andrew Pang</a>
-            </p>
-
-        </div>
-
-
+    <footer class="section--footer">
+        <!-- Footer Logo -->
+        <span class="section--footer__logo fas fa-moon"></span>
     </footer>
 
 </body>

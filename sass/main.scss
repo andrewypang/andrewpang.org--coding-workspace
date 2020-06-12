@@ -4,5 +4,9 @@
 @import "base/base";
 @import "base/typography";
 
-@import "layout/section-footer";
-@import "layout/section-main";
+@import "components/card";
+
+@import "layout/section";
+@import "layout/section--header";
+@import "layout/section--main-content";
+@import "layout/section--footer";

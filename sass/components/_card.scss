@@ -1,0 +1,115 @@
+.card {
+    width: 100%;
+    height: 33vw;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-body {
+        width: 100%;
+        height: 40%;
+        background-color: rgba(white, .8);
+        position: absolute;
+        bottom: 0;
+
+        padding: 8px;
+
+        &__title {
+            margin-bottom: 8px;
+        }
+
+        &__description {
+            margin: 8px 0;
+        }
+    }
+}
+
+// If media has hover capability
+@media only screen and (hover: hover) {
+    .card {
+        transition: all $page-float-out-time ease;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 2px 1.5rem .2rem rgba(0, 0, 0, 0.14),
+            0 3px 2px -2px rgba(0, 0, 0, 0.12),
+            0 1px 6px 0 rgba(0, 0, 0, 0.2)
+    }
+
+}
+
+// @media only screen and (max-width: 800px) {
+//     .card {
+//         height: 33vh;
+//     }
+// }
+
+// card span spacing
+.card {
+    &--span-2 {
+        grid-column: auto / span 2;
+    }
+
+    &--span-4 {
+        grid-column: auto / span 4;
+    }
+
+    &--span-6 {
+        grid-column: auto / span 6;
+    }
+}
+
+// card image links
+// edit here to change photos
+.card {
+    &-image {
+
+        // &--art {
+        //     background-image: linear-gradient(to top, rgba(#fff, .8), rgba(#fff, .2)),
+        //         url(../img/mountains.svg);
+        //     background-size: cover;
+        //     background-position: 50% 40%;
+        // }
+
+        &--web-resources {
+            background-image: url(../img/web-resources-photo.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        &--programming-resources {
+            background-image: url(../img/programming-resources-photo.jpg);
+            background-size: cover;
+            background-position: top;
+        }
+
+        &--UCSC-TrailMapping {
+            background-image: linear-gradient(to bottom, rgba(#fff, .2), rgba(#fff, .2)),
+                url(../img/UCSC-TrailMapping-CardPicture.jpg);
+            background-size: 120%;
+            background-position: 50% 50%;
+        }
+
+        &--ucsc-machine-learning-notes {
+            background-image: url(../img/ucsc-machine-learning-notes.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        &--git {
+            background-image: url(../img/git-notes.jpg);
+            background-size: cover;
+            background-position: center right;
+        }
+    }
+}

@@ -36,12 +36,104 @@ body {
   font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 }
 
-.footer {
+.card {
+  width: 100%;
+  height: 33vw;
+  border-radius: 0.5rem;
+  overflow: hidden;
   position: relative;
-  margin: 2rem 0 2rem 0;
 }
 
-.footer__content {
+.card .card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-body {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+}
+
+.card .card-body__title {
+  margin-bottom: 8px;
+}
+
+.card .card-body__description {
+  margin: 8px 0;
+}
+
+@media only screen and (hover: hover) {
+  .card {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-box-shadow: 0 2px 1.5rem 0.2rem rgba(0, 0, 0, 0.14), 0 3px 2px -2px rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 1.5rem 0.2rem rgba(0, 0, 0, 0.14), 0 3px 2px -2px rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card--span-2 {
+  grid-column: auto / span 2;
+}
+
+.card--span-4 {
+  grid-column: auto / span 4;
+}
+
+.card--span-6 {
+  grid-column: auto / span 6;
+}
+
+.card-image--web-resources {
+  background-image: url(../img/web-resources-photo.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.card-image--programming-resources {
+  background-image: url(../img/programming-resources-photo.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.card-image--UCSC-TrailMapping {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/UCSC-TrailMapping-CardPicture.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/UCSC-TrailMapping-CardPicture.jpg);
+  background-size: 120%;
+  background-position: 50% 50%;
+}
+
+.card-image--ucsc-machine-learning-notes {
+  background-image: url(../img/ucsc-machine-learning-notes.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.card-image--git {
+  background-image: url(../img/git-notes.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+
+.section, .section--header, .section--main-content, .section--footer {
+  margin: 0 5rem;
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.section--header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,39 +141,54 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.6rem;
 }
 
-.footer__logo {
-  font-size: 6rem;
-  margin: 0 0 1rem 0;
+.section--main-content {
+  gap: 16px;
 }
 
-.footer__navigation {
+.section--footer {
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section--footer__content {
+  grid-column: auto / -1;
+}
+
+.section--footer__logo {
+  text-align: center;
+  font-size: 8rem;
+}
+
+.section--footer__navigation {
   font-size: 1.6rem;
   margin: 1rem 0 1rem 0;
 }
 
-.footer__copyright {
+.section--footer__copyright {
   margin: 1rem 0 0 0;
 }
 
-.footer__list {
+.section--footer__list {
   list-style: none;
 }
 
-.footer__item {
+.section--footer__item {
   display: inline-block;
 }
 
-.footer__item:not(:last-child) {
+.section--footer__item:not(:last-child) {
   margin-right: 1.5rem;
 }
 
-.footer__link:link, .footer__link:visited {
+.section--footer__link:link, .section--footer__link:visited {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -90,77 +197,8 @@ body {
   transition: all .2s;
 }
 
-.footer__link:hover, .footer__link:active {
+.section--footer__link:hover, .section--footer__link:active {
   -webkit-transform: translateY(-0.4rem);
           transform: translateY(-0.4rem);
-}
-
-.section-index {
-  margin: 1rem auto 1rem auto;
-}
-
-@media only screen and (hover: hover) {
-  .section-index .card {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .section-index .card:hover {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-    -webkit-box-shadow: 0 2px 1.5rem 0.2rem rgba(0, 0, 0, 0.14), 0 3px 2px -2px rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 1.5rem 0.2rem rgba(0, 0, 0, 0.14), 0 3px 2px -2px rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.2);
-  }
-}
-
-.card .card-image {
-  width: 100%;
-  height: 20rem;
-}
-
-.card .card-image--art {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/mountains.svg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/mountains.svg);
-  background-size: cover;
-  background-position: 50% 40%;
-}
-
-.card .card-image--astrophotography {
-  background-image: url(https://astrophotography.andrewpang.org/photos/solar-system/moon/highlights/close-ups/Moon_200308_g3_ap301.jpg);
-  background-size: cover;
-}
-
-.card .card-image--UCSC-TrailMapping {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(https://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(https://projects.andrewpang.org/UCSC-TrailMapping/UCSC-TrailMapping-CardPicture.jpeg);
-  background-size: 150% auto;
-  background-position: 50% 40%;
-}
-
-.card .card-image--CMPS142 {
-  background-image: url(../img/cmps142-ML-photo-min.jpg);
-  background-size: cover;
-  background-position: 0% 50%;
-}
-
-.card .card-image--web-resources {
-  background-image: url(../img/web-resources-photo-min.jpg);
-  background-size: cover;
-}
-
-.card .card-image--programming-resources {
-  background-image: url(../img/programming-resources-photo-min.jpg);
-  background-size: cover;
-  background-position: 0% 35%;
-}
-
-.card .card-image--git {
-  background-image: url(../img/git-photo-min.jpg);
-  background-size: cover;
-}
-
-.card .card-content .card-description {
-  margin: 1rem 0 0 0;
 }
 /*# sourceMappingURL=main.css.map */
